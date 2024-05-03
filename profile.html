@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- collego il mio bootstrap personalizzato -->
+    <link rel="stylesheet" href="./Netflix-assets/custom-bootstrap.css" />
+  </head>
+  <body class="bg-secondary">
+    <!-- Parte in alto con gradient e logo -->
+    <header class="sticky-top pt-2 ps-2">
+      <a class="navbar-brand" href="#">
+        <img src="./Netflix-assets/assets/netflix_logo.png" alt="Bootstrap" />
+      </a>
+    </header>
+    <!-- main modifica profilo -->
+    <main class="container mt-5">
+      <div class="col-11 col-lg-8 col-xl-6 mx-auto pt-2">
+        <!-- colonna centrale -->
+        <h1
+          class="h1 text-light pb-2 border-bottom border-primary border-2"
+          id="h1"
+        >
+          Edit Profile
+        </h1>
+        <div class="row">
+          <!-- lato sinistro con avatar -->
+          <div class="col-12 col-md-3 mt-4">
+            <img
+              src="./Netflix-assets/assets/avatar.png"
+              alt="immagine avatar"
+              class="img-fluid"
+            />
+          </div>
+          <!-- lato destro -->
+          <div class="col-12 col-md-9 mt-4">
+            <div class="border-bottom border-primary border-2 pb-4">
+              <!-- prima parte -->
+              <input
+                type="text"
+                class="w-75 bg-dark border-0 p-2 text-light testo"
+                placeholder="Strive Student"
+              />
+              <div class="mt-4">
+                <h4 class="p-0 m-0 text-info pb-2">Language:</h4>
+                <select class="w-25 bg-black text-light border border-light">
+                  <option selected>English</option>
+                  <option value="1">Italiano</option>
+                  <option value="2">Français</option>
+                  <option value="3">Deutsch</option>
+                  <option value="4">Română</option>
+                </select>
+              </div>
+            </div>
+            <div class="mt-3 border-bottom border-primary border-2 pb-4">
+              <!-- seconda parte -->
+              <h4 class="p-0 m-0 text-info pb-1">Maturity Settings:</h4>
+              <button
+                type="button"
+                class="bg-primary text-light px-2 border-0 mt-2 mb-1"
+              >
+                ALL MATURITY RATINGS
+              </button>
+              <p class="p-0 my-2 text-light">
+                Show titles of all maturity ratings for this profile.
+              </p>
+              <button
+                type="button"
+                class="bg-secondary border-info border-1 px-3 py-1 text-dark"
+              >
+                EDIT
+              </button>
+            </div>
+            <div class="mb-4">
+              <!-- terza parte -->
+              <h4 class="p-0 grey mt-3 text-light">Autoplay controls</h4>
+              <div class="form-check d-flex align-items-center">
+                <input
+                  class="form-check-input bg-secondary border-info"
+                  type="checkbox"
+                  value=""
+                  checked
+                />
+                <label class="form-check-label text-light ms-2">
+                  Autoplay next episode in a series on all devices.
+                </label>
+              </div>
+              <div class="form-check d-flex align-items-center">
+                <input
+                  class="form-check-input bg-secondary border-info"
+                  type="checkbox"
+                  value=""
+                  checked
+                />
+                <label class="form-check-label text-light ms-2">
+                  Autoplay previews whlle browsing on all devices.
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row border-top border-primary border-2 pt-4">
+          <!-- bottoni finali -->
+          <div class="col-12 d-flex justify-content-around">
+            <a href="index.html"
+              ><button type="button" class="bg-light px-3 px-lg-4 py-1">
+                SAVE
+              </button></a
+            >
+            <button
+              type="button"
+              class="bg-secondary border border-info text-dark px-3 px-lg-4 py-1"
+            >
+              CANCEL
+            </button>
+            <button
+              type="button"
+              class="bg-secondary border border-info text-dark px-3 px-lg-4 py-1"
+            >
+              DELETE PROFILE
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

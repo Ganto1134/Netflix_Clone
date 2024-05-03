@@ -1,0 +1,50 @@
+@import 'scss/functions'; 
+@import 'scss/variables'; 
+
+// creo i nuovi colori
+$new-primary: #333333;
+$new-secondary: #141414;
+$new-info: #cccccc;
+$new-dark: #666666;
+
+
+$new-theme-colors: (
+  'primary': $new-primary,
+  'secondary': $new-secondary,
+  'info': $new-info,
+  'dark': $new-dark,
+);
+
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+
+@import 'scss/bootstrap.scss';
+
+header { 
+  background: linear-gradient(to bottom, #060606, #141414);
+}
+
+.navbar-brand img {
+  height: 4rem;
+}
+
+#h1 { 
+  font-size: 4rem;
+}
+
+.mt-4 h4 { 
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.testo::placeholder { 
+  color: white;
+}
+
+.align-items-center input { 
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.justify-content-around button { 
+  font-size: 1.5rem;
+}
