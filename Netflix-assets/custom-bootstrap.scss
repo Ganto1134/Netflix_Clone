@@ -23,8 +23,10 @@ header {
   background: linear-gradient(to bottom, #060606, #141414);
 }
 
+// Profile
+
 .navbar-brand img {
-  height: 4rem;
+  height: 3.5rem;
 }
 
 #h1 { 
@@ -47,4 +49,51 @@ header {
 
 .justify-content-around button { 
   font-size: 1.5rem;
+}
+
+#bottone {
+  bottom: 3%;
+  left: 2%;
+}
+
+// home
+
+.dropdown-menu li a:hover { 
+  background-color: #e50914;
+}
+
+#bottoneDestra { 
+  font-size: 2rem;
+}
+
+.carosello img:hover { 
+  scale: 1.05;
+}
+
+.carousel-control-next { 
+  bottom: auto;
+}
+
+.carousel-control-prev { 
+  bottom: auto;
+}
+
+.row span i { 
+  font-size: 40px;
+  color: #666666;
+  padding: 0 0.5rem;
+}
+
+.row span i:hover { 
+  background-color: #333333;
+}
+
+.col p a { 
+  color: #666666;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.col p a:hover { 
+  color: #e50914;
 }
