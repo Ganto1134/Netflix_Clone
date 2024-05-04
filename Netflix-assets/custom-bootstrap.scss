@@ -56,6 +56,14 @@ header {
   left: 2%;
 }
 
+#bottone:hover { 
+  color: #e50914;
+}
+
+.botto:hover {
+  color: #e50914;
+ }
+
 // home
 
 .dropdown-menu li a:hover { 
@@ -95,5 +103,11 @@ header {
 }
 
 .col p a:hover { 
+  color: #e50914;
+}
+
+// settings
+
+#member:hover { 
   color: #e50914;
 }

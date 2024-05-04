@@ -12004,6 +12004,14 @@ header {
   left: 2%;
 }
 
+#bottone:hover {
+  color: #e50914;
+}
+
+.botto:hover {
+  color: #e50914;
+}
+
 .dropdown-menu li a:hover {
   background-color: #e50914;
 }
@@ -12041,5 +12049,9 @@ header {
 }
 
 .col p a:hover {
+  color: #e50914;
+}
+
+#member:hover {
   color: #e50914;
 }/*# sourceMappingURL=custom-bootstrap.css.map */

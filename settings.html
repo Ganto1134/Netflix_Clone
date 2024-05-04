@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- collego il mio bootstrap personalizzato -->
+    <link rel="stylesheet" href="./Netflix-assets/custom-bootstrap.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-0 mx-4 pb-1">
+          <div>
+            <img
+              src="./Netflix-assets/assets/netflix_logo.png"
+              alt=""
+              height="45px"
+            />
+          </div>
+          <button
+            class="navbar-toggler bg-dark"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-info" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="#"
+                  >TV Shows</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-info" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-info" href="#">Recently Added</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-info" href="#">My List</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <div
+                class="collapse collapse-horizontal"
+                id="collapseWidthExample"
+              >
+                <input
+                  class="form-control d-flex me-2 collapse collapse-horizontal"
+                  type="search"
+                  placeholder="Cerca"
+                  aria-label="Search"
+                />
+              </div>
+              <button
+                class="btn"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseWidthExample"
+                aria-expanded="false"
+                aria-controls="collapseWidthExample"
+              >
+                <i class="bi bi-search text-light"></i>
+              </button>
+            </form>
+            <div class="d-flex align-items-center">
+              <p class="mb-0 text-light">KIDS</p>
+              <div class="my-3 my-lg-1 ms-auto">
+                <i class="bi bi-bell-fill text-info mx-3"></i>
+              </div>
+              <div class="nav-item dropdown text-info">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="./Netflix-assets/assets/avatar.png"
+                    alt=""
+                    width="30px"
+                  />
+                </a>
+                <ul class="dropdown-menu dropdown-menu-sm-end bg-dark">
+                  <li>
+                    <a class="dropdown-item text-light" href="./index.html"
+                      ><i class="bi bi-house me-2"></i>Home</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-light" href="./profile.html">
+                      <img
+                        src="./Netflix-assets/assets/avatar.png"
+                        alt=""
+                        height="16px"
+                        class="me-2"
+                      />Profile</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-light" href="./settings.html"
+                      ><i class="bi bi-gear-fill me-2"></i>Settings</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-light" href="#"
+                      ><i class="bi bi-box-arrow-left me-2"></i>Exit</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- main -->
+    <main class="my-5">
+      <div class="container mx-auto">
+        <h1 class="my-4">Account</h1>
+        <div class="d-lg-flex justify-content-between border-top border-2 pt-3">
+          <div class="w-25 mb-4">
+            <h5 class="text-body-tertiary">MEMBERSHIP & BILLING</h5>
+            <button
+              type="button"
+              class="btn rounded-0 border-2 bg-secondary-subtle px-4 fw-bold"
+              id="member"
+            >
+              Cancel membership
+            </button>
+          </div>
+          <div class="w-75">
+            <div
+              class="d-flex justify-content-between border-bottom border-2 pb-3"
+            >
+              <div class="d-flex flex-column justify-content-between">
+                <p class="mb-0 fw-medium">student@strive.school</p>
+                <p class="mb-0 text-body-tertiary">Password: ********</p>
+                <p class="mb-0 text-body-tertiary">Phone: 321 823 1712</p>
+              </div>
+              <div class="d-flex flex-column justify-content-between">
+                <a class="text-decoration-none d-block text-end" href="#"
+                  >Change account mail</a
+                >
+                <a class="text-decoration-none d-block text-end" href="#"
+                  >Change password</a
+                >
+                <a class="text-decoration-none d-block text-end" href="#"
+                  >Change phone number</a
+                >
+              </div>
+            </div>
+            <div
+              class="d-flex justify-content-between border-bottom border-2 pb-3 mt-3"
+            >
+              <div class="d-flex flex-column justify-content-between">
+                <p class="mb-0 fw-medium">
+                  <i class="bi bi-paypal"></i>
+                  Paypal admin@strive.school
+                </p>
+              </div>
+              <div class="d-flex flex-column justify-content-between">
+                <a class="text-decoration-none d-block text-end" href="#"
+                  >Update payment info</a
+                >
+                <a class="text-decoration-none d-block text-end" href="#"
+                  >Billing details</a
+                >
+              </div>
+            </div>
+            <div class="text-lg-end pb-3 mt-3">
+              <a class="text-decoration-none d-block w-100" href="#"
+                >Redeem gift card of promo code</a
+              >
+              <a class="text-decoration-none d-block w-100" href="#"
+                >Where to buy gift cards</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- plan details -->
+        <div class="d-lg-flex justify-content-between border-top border-2 pt-3">
+          <div class="mb-3">
+            <h5 class="text-body-tertiary">PLAN DETAILS</h5>
+          </div>
+          <div class="w-75">
+            <div class="d-flex justify-content-between mb-4">
+              <div class="d-flex justify-content-between">
+                <p class="m-0 fw-medium justify-content-start">Premium</p>
+                <img
+                  class="ms-2 justify-content-start border border-black"
+                  src="https://www.cdnlogo.com/logos/u/57/ultra-hd.svg"
+                  alt=""
+                  height="20px"
+                />
+              </div>
+              <div class="d-flex flex-column justify-content-between">
+                <a class="text-decoration-none d-block text-end" href="#"
+                  >Change plan</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-lg-flex justify-content-between border-top border-2 pt-3">
+          <div class="mb-3">
+            <h5 class="text-body-tertiary">SETTINGS</h5>
+          </div>
+          <div class="w-75">
+            <div class="pb-4">
+              <a class="text-decoration-none" href="#">Parental controls</a>
+              <a class="text-decoration-none d-block" href="#"
+                >Test partecipation</a
+              >
+              <a class="text-decoration-none d-block w-100" href="#"
+                >Manage download devices</a
+              >
+              <a class="text-decoration-none d-block w-100" href="#"
+                >Activate a device</a
+              >
+              <a class="text-decoration-none d-block w-100" href="#"
+                >Recent device streaming activity</a
+              >
+              <a class="text-decoration-none d-block w-100" href="#"
+                >Sing out of all devices</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- my profile -->
+        <div class="d-lg-flex justify-content-between border-top border-2 pt-3">
+          <div class="mb-3">
+            <h5 class="text-body-tertiary pt-2">MY PROFILE</h5>
+          </div>
+          <div class="w-75">
+            <div class="d-lg-flex justify-content-between">
+              <div class="d-flex flex-column justify-content-between pt-2">
+                <p class="fw-medium m-0 h6">
+                  <img
+                    class="me-3"
+                    src="./Netflix-assets/assets/avatar.png"
+                    alt=""
+                    height="30px"
+                  />Strive student
+                </p>
+              </div>
+              <div class="d-lg-flex flex-column justify-content-between">
+                <a
+                  class="text-decoration-none d-block text-lg-end mt-0"
+                  href="#"
+                  >Manage profiles</a
+                >
+                <a class="text-decoration-none d-block text-lg-end" href="#"
+                  >Add profile email</a
+                >
+              </div>
+            </div>
+            <div class="d-lg-flex w-75 justify-content-between mt-4">
+              <div class="d-flex flex-column justify-content-between">
+                <p>
+                  <a class="text-decoration-none d-block" href="#">Language</a>
+                  <a class="text-decoration-none d-block" href="#"
+                    >Playback settings</a
+                  >
+                  <a class="text-decoration-none d-block" href="#"
+                    >Subtitle appeareace</a
+                  >
+                </p>
+              </div>
+              <div class="d-flex flex-column">
+                <a class="text-decoration-none d-block" href="#"
+                  >Viewing activity</a
+                >
+                <a class="text-decoration-none d-block" href="#">Ratings</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="mt-2 pt-3 border-top">
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+          <div class="col-6 text-dark">
+            <div class="row d-none d-md-flex my-3">
+              <div class="col">
+                <p>
+                  <a
+                    class="text-decoration-underline"
+                    href="https://www.netflix.com/NotFound?prev=https%3A%2F%2Fwww.netflix.com%2Fbrowse%2Faudio%2520e%2520subtitle"
+                    target="_blank"
+                    >Audio and Subtitles</a
+                  >
+                </p>
+                <p>
+                  <a
+                    class="text-decoration-underline"
+                    href="https://www.netflix.com/NotFound?prev=https%3A%2F%2Fwww.netflix.com%2Fbrowse%2Faudio%2520e%2520subtitle"
+                    target="_blank"
+                    >Media Center</a
+                  >
+                </p>
+                <p>
+                  <a
+                    class="text-decoration-underline"
+                    href="https://www.netflix.com/NotFound?prev=https%3A%2F%2Fwww.netflix.com%2Fbrowse%2Faudio%2520e%2520subtitle"
+                    target="_blank"
+                    >Privacy</a
+                  >
+                </p>
+                <p class="mb-4">
+                  <a
+                    class="text-decoration-underline"
+                    href="https://www.netflix.com/NotFound?prev=https%3A%2F%2Fwww.netflix.com%2Fbrowse%2Faudio%2520e%2520subtitle"
+                    target="_blank"
+                    >Contact Us</a
+                  >
+                </p>
+                <button type="button" class="btn btn-outline-dark fw-bold">
+                  Service Code
+                </button>
+              </div>
+              <div class="col">
+                <p>
+                  <a
+                    class="text-decoration-underline"
+                    href="https://www.netflix.com/NotFound?prev=https%3A%2F%2Fwww.netflix.com%2Fbrowse%2Faudio%2520e%2520subtitle"
+                    target="_blank"
+                    >Audio Description</a
+                  >
+                </p>
+                <p>
+                  <a
+                    class="text-decoration-underline"
+                    href="https://www.netflix.com/NotFound?prev=https%3A%2F%2Fwww.netflix.com%2Fbrowse%2Faudio%2520e%2520subtitle"
+                    target="_blank"
+                    >Investor Relations</a
+                  >
+                </p>
+                <p>
+                  <a
+                    class="text-decoration-underline"
+                    href="https://www.netflix.com/NotFound?prev=https%3A%2F%2Fwww.netflix.com%2Fbrowse%2Faudio%2520e%2520subtitle"
+                    target="_blank"
+                    >Legal Notices</a
+                  >
+                </p>
+              </div>
+              <div class="col">
+                <p>
+                  <a
+                    class="text-decoration-underline"
+                    href="https://www.netflix.com/NotFound?prev=https%3A%2F%2Fwww.netflix.com%2Fbrowse%2Faudio%2520e%2520subtitle"
+                    target="_blank"
+                    >Help Center</a
+                  >
+                </p>
+                <p>
+                  <a
+                    class="text-decoration-underline"
+                    href="https://www.netflix.com/NotFound?prev=https%3A%2F%2Fwww.netflix.com%2Fbrowse%2Faudio%2520e%2520subtitle"
+                    target="_blank"
+                    >Jobs</a
+                  >
+                </p>
+                <p>
+                  <a
+                    href="https://www.netflix.com/NotFound?prev=https%3A%2F%2Fwww.netflix.com%2Fbrowse%2Faudio%2520e%2520subtitle"
+                    target="_blank"
+                    >Cookie Preferences</a
+                  >
+                </p>
+              </div>
+              <div class="col">
+                <p>
+                  <a
+                    class="text-decoration-underline"
+                    href="https://www.netflix.com/NotFound?prev=https%3A%2F%2Fwww.netflix.com%2Fbrowse%2Faudio%2520e%2520subtitle"
+                    target="_blank"
+                    >Gift Cards</a
+                  >
+                </p>
+                <p>
+                  <a
+                    class="text-decoration-underline"
+                    href="https://www.netflix.com/NotFound?prev=https%3A%2F%2Fwww.netflix.com%2Fbrowse%2Faudio%2520e%2520subtitle"
+                    target="_blank"
+                    >Terms of Use</a
+                  >
+                </p>
+                <p>
+                  <a
+                    class="text-decoration-underline"
+                    href="https://www.netflix.com/NotFound?prev=https%3A%2F%2Fwww.netflix.com%2Fbrowse%2Faudio%2520e%2520subtitle"
+                    target="_blank"
+                    >Corporate Information</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
